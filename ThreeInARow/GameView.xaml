@@ -1,0 +1,21 @@
+﻿<Window x:Class="ThreeInARow.GameView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:ThreeInARow"
+        mc:Ignorable="d"
+        Title="GameView" Height="450" Width="800">
+    <Grid VerticalAlignment="Stretch" Margin="0" MinWidth="11" Background="Aqua">
+        <StackPanel Orientation="Vertical" Width="500" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <DockPanel>
+                <Label Name ="TimeLabel" DockPanel.Dock="Left" Content="00:00" Height="30" MinWidth="60"  Margin="5"/>
+                <Label Name ="ScoreLabel" DockPanel.Dock="Right" Content="SCORE: 0" Height="30" MinWidth="80" Margin="5"/>
+                <ProgressBar Name ="TimeBar" DockPanel.Dock="Top" Minimum="0" Maximum="60" Height="30" Margin="5"/>
+            </DockPanel>
+            <Canvas  x:Name="GameCanvas" Height="500" Width="500">
+                
+            </Canvas>
+        </StackPanel>
+    </Grid>
+</Window>

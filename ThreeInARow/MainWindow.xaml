@@ -1,0 +1,13 @@
+﻿<Window x:Class="ThreeInARow.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ThreeInARow"
+        mc:Ignorable="d"
+        Title="ThreeInARow" Height="350" Width="525">
+        <Grid x:Name="StartScreen" Visibility="Visible" Background="Aqua">
+                <Button Click="OnStartBtnClick" VerticalAlignment="Center" HorizontalAlignment ="Center" MinHeight="100" MaxHeight="150" MinWidth="100" MaxWidth="150"  Content="START"/>
+                     
+        </Grid>
+</Window>
