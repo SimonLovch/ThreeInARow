@@ -7,6 +7,7 @@ namespace ThreeInARow
     public partial class GameView
     {
         private Field game;
+        private Timer timer;
 
         public GameView()
         {
@@ -17,7 +18,7 @@ namespace ThreeInARow
         private void StartGame()
         {
             int maxTime = 60;
-            game = new Field(Canvas, ScoreLabel);
+            game = new Field(GameCanvas, ScoreLabel);
             timer = new Timer(game, TimeBar, TimeLabel, maxTime);
         }
     }
